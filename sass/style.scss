@@ -1,19 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$clr-violet: #674baf;
+$clr-magenta: #e882e8;
+$clr-middle: #ff8999;
+$clr-orange: #fea144;
+$clr-white: #fff;
+$clr-black: #000;
+$clr-black-25: #00000040;
+
+$ft-fy-heading: 'Poppins', sans-serif;
+$ft-fy-body: 'Open Sans', sans-serif;
+
+$ft-wt-bold: 600;
+$ft-wt-regular: 400;
+
+$ft-sz-lg: calc(24rem / 16);
+$ft-sz-md: 1rem;
+$ft-sz-sm: calc(12rem / 16);
+
+$sdw-box: 0 0.2rem 0.75rem $clr-black-25;
+//$sdw-glow:---------------------------------------------------------------------
+
+$pad: calc($ft-sz-lg * 1.5);
+
+@mixin font($fy, $wt, $sz, $clr) {
+    font-family: $fy;
+    font-weight: $wt;
+    font-size: $sz;
+    color: $clr;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
+h1 {
+    @include font($ft-fy-heading, $ft-wt-bold, $ft-sz-lg, $clr-white);
 }
 
-svg {
-    width: 24px;
-    height: 24px;
-    padding: 3px;
-    overflow: visible;
-    fill: #fff;
-    border: solid 1px white;
-    border-radius: 50%;
+p {
+    @include font($ft-fy-body, $ft-wt-regular, $ft-sz-md, $clr-white);
+    margin: 1em 0;
+}
+
+a, a:visited {
+    color: $clr-magenta;
+    text-decoration: none;
+    &:hover {
+        animation: aColor 5s linear alternate infinite
+    }
+}
+
+button {
+    @include font($ft-fy-heading, $ft-wt-regular, $ft-sz-sm, $clr-violet);
+    background-color: $clr-white;
+    padding: 0.8em 5em;
+    border: none;
+    border-radius: 5em;
+    box-shadow: $sdw-box;
+    margin: 1em;
+    &:hover {
+        color: $clr-white;
+        animation: btnColor 5s linear alternate infinite;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background: $clr-violet url(../images/bg-mobile.svg) top center / contain no-repeat;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    header {
+        padding: $pad;
+        svg {
+            width: 130px;
+            height: 33.33px;
+            fill: $clr-white;
+            &:hover {
+                animation: svgColor 5s linear alternate infinite;
+            }
+        }
+    }
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        picture {
+            width: 100%;
+            padding: 0 $pad;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        article {
+            text-align: center;
+            padding: $pad;
+        }
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-between;
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        div {
+            margin: 0 auto;
+            a {
+                margin: 0 0.3125rem;
+                svg {
+                    fill: $clr-white;
+                    width: $ft-sz-lg;
+                    height: $ft-sz-lg;
+                    padding: 3px;
+                    overflow: visible;
+                    border: solid 1px white;
+                    border-radius: 50%;
+                }
+                &:hover svg {
+                    animation: svgColor 5s linear alternate infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes aColor {
+    0% {
+        color: $clr-magenta;
+    }
+    50% {
+        color: $clr-middle;
+    }
+    100% {
+        color: $clr-orange;
+    }
+}
+
+@keyframes btnColor {
+    0% {
+        background-color: $clr-magenta;
+    }
+    50% {
+        background-color: $clr-middle;
+    }
+    100% {
+        background-color: $clr-orange;
+    }
+}
+
+@keyframes svgColor {
+    0% {
+        fill: $clr-magenta;
+        border-color: $clr-magenta;
+    }
+    50% {
+        fill: $clr-middle;
+        border-color: $clr-middle;
+    }
+    100% {
+        fill: $clr-orange;
+        border-color: $clr-orange;
+    }
+}
+
+@media (min-width: 768px)  {
+    body {
+        background: $clr-violet url(../images/bg-desktop.svg) top left / cover no-repeat;
+    }
 }

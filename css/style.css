@@ -1,19 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-svg {
-  width: 24px;
-  height: 24px;
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  margin: 1em 0;
+}
+
+a, a:visited {
+  color: #e882e8;
+  text-decoration: none;
+}
+a:hover, a:visited:hover {
+  animation: aColor 5s linear alternate infinite;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #674baf;
+  background-color: #fff;
+  padding: 0.8em 5em;
+  border: none;
+  border-radius: 5em;
+  box-shadow: 0 0.2rem 0.75rem rgba(0, 0, 0, 0.2509803922);
+  margin: 1em;
+}
+button:hover {
+  color: #fff;
+  animation: btnColor 5s linear alternate infinite;
+}
+
+body {
+  min-height: 100vh;
+  background: #674baf url(../images/bg-mobile.svg) top center/contain no-repeat;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+}
+body header {
+  padding: 2.25rem;
+}
+body header svg {
+  width: 130px;
+  height: 33.33px;
+  fill: #fff;
+}
+body header svg:hover {
+  animation: svgColor 5s linear alternate infinite;
+}
+body main {
+  display: flex;
+  flex-flow: row wrap;
+}
+body main picture {
+  width: 100%;
+  padding: 0 2.25rem;
+}
+body main picture img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+body main article {
+  text-align: center;
+  padding: 2.25rem;
+}
+body footer {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+}
+body footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+body footer div {
+  margin: 0 auto;
+}
+body footer div a {
+  margin: 0 0.3125rem;
+}
+body footer div a svg {
+  fill: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
   padding: 3px;
   overflow: visible;
-  fill: #fff;
   border: solid 1px white;
   border-radius: 50%;
+}
+body footer div a:hover svg {
+  animation: svgColor 5s linear alternate infinite;
+}
+
+@keyframes aColor {
+  0% {
+    color: #e882e8;
+  }
+  50% {
+    color: #ff8999;
+  }
+  100% {
+    color: #fea144;
+  }
+}
+@keyframes btnColor {
+  0% {
+    background-color: #e882e8;
+  }
+  50% {
+    background-color: #ff8999;
+  }
+  100% {
+    background-color: #fea144;
+  }
+}
+@keyframes svgColor {
+  0% {
+    fill: #e882e8;
+    border-color: #e882e8;
+  }
+  50% {
+    fill: #ff8999;
+    border-color: #ff8999;
+  }
+  100% {
+    fill: #fea144;
+    border-color: #fea144;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: #674baf url(../images/bg-desktop.svg) top left/cover no-repeat;
+  }
 }/*# sourceMappingURL=style.css.map */
