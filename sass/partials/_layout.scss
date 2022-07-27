@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: $clr-violet url(../../images/bg-desktop.svg) top center / cover no-repeat;
+    background: $clr-violet url(../images/bg-desktop.svg) top center / cover no-repeat;
     display: grid;
     grid-template-rows: min-content auto min-content;
     header {
@@ -59,7 +59,7 @@ body {
 
 @media (orientation: portrait)  {
     body {
-        background: $clr-violet url(../../images/bg-mobile.svg) top left / contain no-repeat;
+        background: $clr-violet url(../images/bg-mobile.svg) top left / contain no-repeat;
         header {
             padding: $pad;
         }
