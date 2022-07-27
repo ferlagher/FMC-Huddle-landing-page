@@ -1,0 +1,23 @@
+svg {
+    fill: $clr-white;
+    width: 100%;
+    height: 100%;
+    transition: $tsn;
+    &:hover {
+        fill: $clr-magenta;
+    }
+}
+
+li {
+    a{
+        svg {
+            padding: $pad-icon;
+            overflow: visible;
+            border: solid 2px white;
+            border-radius: 50%;
+        }
+        &:hover svg {
+            border-color: $clr-magenta;
+        }
+    }
+}

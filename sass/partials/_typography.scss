@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+h1 {
+    @include font($ft-fy-heading, $ft-wt-bold, $ft-sz-lg, $clr-white);
+}
+
+p {
+    @include font($ft-fy-body, $ft-wt-regular, $ft-sz-md, $clr-white);
+    margin: 1em 0;
+}
+
+a, a:visited {
+    color: $clr-magenta;
+    text-decoration: none;
+    transition: $tsn;
+    &:hover {
+        color: $clr-orange;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin font($fy, $wt, $sz, $clr) {
+    font-family: $fy;
+    font-weight: $wt;
+    font-size: $sz;
+    color: $clr;
+}
+
+@mixin transformations($i, $s, $t, $o) {
+    clip-path: polygon($spark);
+    transform: rotate(calc(72deg * $i)) scale($s) translateY($t+rem);
+    opacity: $o;
+}   

@@ -1,0 +1,33 @@
+@for $i from 1 through 5 {
+    $t: calc(random(4) + 2);
+    @keyframes spark#{$i} {
+        0% {
+            @include transformations($i, 0.25, calc($t - 2), 0.25);
+        }
+        10% {
+            @include transformations($i, 0.5, calc($t - 1), 0.5);
+        }
+        20% {
+            @include transformations($i, 1, $t, 1);
+        }
+        50% {
+            @include transformations($i, 1, calc($t + 0.2), 0.5);
+        }
+        100% {
+            @include transformations($i, 1, calc($t + 0.3), 0);
+        }
+    }
+}
+
+@for $i from 1 through 5 {
+    $rdm: random();
+    button {
+        div:nth-of-type(#{$i}) {
+            width: calc(0.75 + $rdm)+rem;
+            height: calc(0.75 + $rdm)+rem;
+        }
+        &:hover div:nth-of-type(#{$i})  {
+            animation: spark#{$i} 1.3s calc(random() * 0.05)+s ease-out;
+        }
+    }
+}

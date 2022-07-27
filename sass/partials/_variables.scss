@@ -1,0 +1,29 @@
+$clr-violet: #674baf;
+$clr-magenta: #e882e8;
+$clr-middle: #ff8999;
+$clr-orange: #f3ba77;
+$clr-white: #fff;
+$clr-black: #000;
+$clr-black-25: #00000040;
+
+$ft-fy-heading: 'Poppins', sans-serif;
+$ft-fy-body: 'Open Sans', sans-serif;
+
+$ft-wt-bold: 600;
+$ft-wt-regular: 400;
+
+$ft-sz-lg: clamp(calc(24rem / 16), 3vw, calc(42rem / 16));
+$ft-sz-md: clamp(1rem, 1.25vw, calc(18rem / 16));
+$ft-sz-sm: clamp(calc(12rem / 16), 1.25vw, calc(18rem / 16));
+
+$sz-logo: clamp(calc(120rem / 16), 14vw, calc(200rem / 16));
+$sz-icon: clamp(calc(28rem / 16), 3vw, calc(36rem / 16));
+
+$sdw-box: 0 0.2rem 0.75rem $clr-black-25;
+
+$pad: calc($ft-sz-lg * 1.5);
+$pad-icon: clamp(4px, 0.5vw,7px);
+
+$tsn: 0.3s ease-in-out;
+
+$spark: 42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%;
