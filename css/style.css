@@ -55,6 +55,7 @@ button {
   border: none;
   border-radius: 5em;
   box-shadow: 0 0.2rem 0.75rem rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
   margin: 1em 0;
   transition: 0.3s ease-in-out;
   position: relative;
@@ -100,176 +101,176 @@ button:hover::after {
 @keyframes spark1 {
   0% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(72deg) scale(0.25) translateY(1rem);
+    transform: rotate(72deg) scale(0.25) translateY(3rem);
     opacity: 0.25;
   }
   10% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(72deg) scale(0.5) translateY(2rem);
+    transform: rotate(72deg) scale(0.5) translateY(4rem);
     opacity: 0.5;
   }
   20% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(72deg) scale(1) translateY(3rem);
+    transform: rotate(72deg) scale(1) translateY(5rem);
     opacity: 1;
   }
   50% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(72deg) scale(1) translateY(3.2rem);
+    transform: rotate(72deg) scale(1) translateY(5.2rem);
     opacity: 0.5;
   }
   100% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(72deg) scale(1) translateY(3.3rem);
+    transform: rotate(72deg) scale(1) translateY(5.3rem);
     opacity: 0;
   }
 }
 @keyframes spark2 {
   0% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(144deg) scale(0.25) translateY(3rem);
+    transform: rotate(144deg) scale(0.25) translateY(4rem);
     opacity: 0.25;
   }
   10% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(144deg) scale(0.5) translateY(4rem);
+    transform: rotate(144deg) scale(0.5) translateY(5rem);
     opacity: 0.5;
   }
   20% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(144deg) scale(1) translateY(5rem);
+    transform: rotate(144deg) scale(1) translateY(6rem);
     opacity: 1;
   }
   50% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(144deg) scale(1) translateY(5.2rem);
+    transform: rotate(144deg) scale(1) translateY(6.2rem);
     opacity: 0.5;
   }
   100% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(144deg) scale(1) translateY(5.3rem);
+    transform: rotate(144deg) scale(1) translateY(6.3rem);
     opacity: 0;
   }
 }
 @keyframes spark3 {
   0% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(216deg) scale(0.25) translateY(1rem);
+    transform: rotate(216deg) scale(0.25) translateY(4rem);
     opacity: 0.25;
   }
   10% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(216deg) scale(0.5) translateY(2rem);
+    transform: rotate(216deg) scale(0.5) translateY(5rem);
     opacity: 0.5;
   }
   20% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(216deg) scale(1) translateY(3rem);
+    transform: rotate(216deg) scale(1) translateY(6rem);
     opacity: 1;
   }
   50% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(216deg) scale(1) translateY(3.2rem);
+    transform: rotate(216deg) scale(1) translateY(6.2rem);
     opacity: 0.5;
   }
   100% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(216deg) scale(1) translateY(3.3rem);
+    transform: rotate(216deg) scale(1) translateY(6.3rem);
     opacity: 0;
   }
 }
 @keyframes spark4 {
   0% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(288deg) scale(0.25) translateY(3rem);
+    transform: rotate(288deg) scale(0.25) translateY(4rem);
     opacity: 0.25;
   }
   10% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(288deg) scale(0.5) translateY(4rem);
+    transform: rotate(288deg) scale(0.5) translateY(5rem);
     opacity: 0.5;
   }
   20% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(288deg) scale(1) translateY(5rem);
+    transform: rotate(288deg) scale(1) translateY(6rem);
     opacity: 1;
   }
   50% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(288deg) scale(1) translateY(5.2rem);
+    transform: rotate(288deg) scale(1) translateY(6.2rem);
     opacity: 0.5;
   }
   100% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(288deg) scale(1) translateY(5.3rem);
+    transform: rotate(288deg) scale(1) translateY(6.3rem);
     opacity: 0;
   }
 }
 @keyframes spark5 {
   0% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(360deg) scale(0.25) translateY(3rem);
+    transform: rotate(360deg) scale(0.25) translateY(2rem);
     opacity: 0.25;
   }
   10% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(360deg) scale(0.5) translateY(4rem);
+    transform: rotate(360deg) scale(0.5) translateY(3rem);
     opacity: 0.5;
   }
   20% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(360deg) scale(1) translateY(5rem);
+    transform: rotate(360deg) scale(1) translateY(4rem);
     opacity: 1;
   }
   50% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(360deg) scale(1) translateY(5.2rem);
+    transform: rotate(360deg) scale(1) translateY(4.2rem);
     opacity: 0.5;
   }
   100% {
     clip-path: polygon(42.5% 32.5%, 70% 0%, 67.5% 42.5%, 100% 70%, 57.5% 67.5%, 30% 100%, 32.5% 58.5%, 0% 30%);
-    transform: rotate(360deg) scale(1) translateY(5.3rem);
+    transform: rotate(360deg) scale(1) translateY(4.3rem);
     opacity: 0;
   }
 }
 button div:nth-of-type(1) {
-  width: 1.3496092223rem;
-  height: 1.3496092223rem;
+  width: 1.6982074308rem;
+  height: 1.6982074308rem;
 }
 button:hover div:nth-of-type(1) {
-  animation: spark1 1.3s 0.004823994s ease-out;
+  animation: spark1 1.3s 0.0249456969s ease-out;
 }
 
 button div:nth-of-type(2) {
-  width: 1.1343262205rem;
-  height: 1.1343262205rem;
+  width: 1.4351251162rem;
+  height: 1.4351251162rem;
 }
 button:hover div:nth-of-type(2) {
-  animation: spark2 1.3s 0.0219654904s ease-out;
+  animation: spark2 1.3s 0.0400244694s ease-out;
 }
 
 button div:nth-of-type(3) {
-  width: 1.7427542367rem;
-  height: 1.7427542367rem;
+  width: 1.5469422542rem;
+  height: 1.5469422542rem;
 }
 button:hover div:nth-of-type(3) {
-  animation: spark3 1.3s 0.0004213409s ease-out;
+  animation: spark3 1.3s 0.0119947503s ease-out;
 }
 
 button div:nth-of-type(4) {
-  width: 1.3836827582rem;
-  height: 1.3836827582rem;
+  width: 1.0423853794rem;
+  height: 1.0423853794rem;
 }
 button:hover div:nth-of-type(4) {
-  animation: spark4 1.3s 0.0250200427s ease-out;
+  animation: spark4 1.3s 0.0130738169s ease-out;
 }
 
 button div:nth-of-type(5) {
-  width: 0.8517330123rem;
-  height: 0.8517330123rem;
+  width: 0.998199387rem;
+  height: 0.998199387rem;
 }
 button:hover div:nth-of-type(5) {
-  animation: spark5 1.3s 0.0258422772s ease-out;
+  animation: spark5 1.3s 0.004372264s ease-out;
 }
 
 body {
