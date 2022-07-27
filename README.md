@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-with-custom-animation-Kaq6RHQwAy#comment-62e0d5634890fb4d3878ca6c
 - Live Site URL: https://ferlagher.github.io/FMC-Huddle-landing-page
 
 ## My process
