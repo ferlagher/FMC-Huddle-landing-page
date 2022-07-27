@@ -32,7 +32,7 @@ body {
         }
     }
     footer {
-        padding: calc($pad / 2) $pad;
+        padding: 0 $pad calc($pad / 3) $pad;
         display: flex;
         flex-flow: row wrap-reverse;
         justify-content: center;
